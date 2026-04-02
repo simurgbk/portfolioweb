@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Batuhan Kaykan</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Simurg</a>
+        <i class="fas fa-bars hamburger" id="hamburger"></i>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="index.html">ME</a>
+            <a href="games.html">GAMES</a>
+            <a href="projects.html" class="active">PROJECTS</a>
+            <a href="cv.html">CV</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <h1 class="fade-in">3D Models & 2D Works</h1>
+        
+        <h2 class="fade-in">3D Models</h2>
+        <div class="grid-container">
+            <div class="card fade-in">
+                <img src="lowpolyroom.jpg" alt="Low Poly Room" class="model-trigger" data-model="lowpoolyroom.glb">
+                <div class="card-info">
+                    <h3>Low Poly Room</h3>
+                    <p>An isometric low-poly dungeon/inn room environment modeled with Blender. Click the image to interact with the 3D model in full screen!</p>
+                </div>
+            </div>
+
+            <div class="card fade-in">
+                <img src="totoro.png" alt="Totoro" class="model-trigger" data-model="totoro.glb">
+                <div class="card-info">
+                    <h3>Totoro</h3>
+                    <p>A stylized Totoro character inspired by Studio Ghibli and modeled in Blender, placed within a minimal indoor scene. Rendered for visual presentation.</p>
+                </div>
+            </div>
+            
+            <div class="card fade-in">
+                <img src="tableandchair.png" alt="Table And Chairs" class="model-trigger" data-model="tableandchair.glb">
+                <div class="card-info">
+                    <h3>Table And Chairs</h3>
+                    <p>A set of four chairs and a table designed specifically for the "Bir Demlik Umut" game to establish its characteristic coffeehouse atmosphere.</p>
+                </div>
+            </div>
+            
+            <div class="card fade-in">
+                <img src="beveragecabinet.png" alt="Beverage Cabinet" class="model-trigger" data-model="Beverage.glb">
+                <div class="card-info">
+                    <h3>Beverage Cabinet</h3>
+                    <p>A detailed beverage cooler (cabinet) model, rendered in bright red. Created for the "Bir Demlik Umut" game and prepared for in-game use.</p>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="fade-in">2D Works</h2>
+        <div class="grid-container">
+            <div class="card fade-in">
+                <img src="duotone.png" alt="Duotone" class="lightbox-trigger">
+                <div class="card-info">
+                    <h3>Duotone</h3>
+                    <p>A high-contrast Duotone graphic design study created using a neon purple and vibrant orange color palette. Developed using Photoshop.</p>
+                </div>
+            </div>
+
+            <div class="card fade-in">
+                <img src="gamemenu.png" alt="Game Menu UI" class="lightbox-trigger">
+                <div class="card-info">
+                    <h3>Game Menu UI</h3>
+                    <p>Main menu interface design in a pixel art style, suitable for a 2D platformer. Includes menu elements and a pixel mountain backdrop.</p>
+                </div>
+            </div>
+            
+            <div class="card fade-in">
+                <img src="character.png" alt="Character" class="lightbox-trigger">
+                <div class="card-info">
+                    <h3>Character</h3>
+                    <p>Character designed in pixel art style for a 2D platformer. Optimized for use with run and jump animations.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage" style="display: none;">
+        <model-viewer id="modalModel" alt="3D Model" auto-rotate camera-controls style="display: none;"></model-viewer>
+    </div>
+
+    <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/batuhan-kaykan-889a241a0/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:bthnkykn2@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://teaholic-mooncoders.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
+            <a href="https://www.behance.net/batuhankaykn" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="https://www.instagram.com/bthnkykn/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
