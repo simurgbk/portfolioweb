@@ -70,10 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 trigger.addEventListener("click", function(e) {
                     e.preventDefault();
                     modal.style.display = "flex";
-                    if (modalImg) modalImg.style.display = "none"; // Resmi gizle
+                    if (modalImg) modalImg.style.display = "none"; 
                     if (modalModel) {
-                        modalModel.style.display = "block"; // Modeli göster
-                        modalModel.src = this.getAttribute("data-model"); // glb dosyasını yükle
+                        modalModel.style.display = "block"; 
+                        modalModel.poster = this.src; // ANINDA RESMİ GÖSTERİR
+                        modalModel.src = this.getAttribute("data-model"); // ARKADA 3D'Yİ YÜKLER
                     }
                 });
             });
